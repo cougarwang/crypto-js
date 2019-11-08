@@ -428,7 +428,7 @@ Here's how you might write a JSON formatter:
 Encrypt with OpenSSL:
 
 {{{
-openssl enc -aes-256-cbc -in infile -out outfile -pass pass:"Secret Passphrase" -e -base64
+openssl enc -aes-256-cbc -in infile -out outfile -K 5365637265742050617373706872617365  -e -base64
 }}}
 
 Decrypt with CryptoJS:
